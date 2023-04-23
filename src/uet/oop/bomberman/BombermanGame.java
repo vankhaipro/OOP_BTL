@@ -7,11 +7,11 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
-import uet.oop.bomberman.entities.Bomber;
-import uet.oop.bomberman.entities.Entity;
-import uet.oop.bomberman.entities.Grass;
-import uet.oop.bomberman.entities.Wall;
-import uet.oop.bomberman.graphics.Sprite;
+import uet.oop.bomberman.Entities.Bomber;
+import uet.oop.bomberman.Entities.Entity;
+import uet.oop.bomberman.Entities.Grass;
+import uet.oop.bomberman.Entities.Wall;
+import uet.oop.bomberman.Graphics.Sprite;
 
 import java.util.ArrayList;
 import java.util.List;
