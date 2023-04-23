@@ -11,7 +11,7 @@ public class Bomber extends Entity {
     public Bomber(int x, int y, Image img) {
         super( x, y, img);
     }
-// người chơi
+// testing
     @Override
     public void update() {
 
