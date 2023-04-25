@@ -9,6 +9,9 @@ public class Board {
     public static final int HEIGHT = 13;
     public static final int MAX_LEVEL = 3;
     public static char[][] map = new char[HEIGHT][WIDTH];
+
+    public static int bombCount =1;
+    public static int bombRadius = 1;
     private static Bomber player;
 
     public static boolean flamePass = false;

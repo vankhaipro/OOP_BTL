@@ -47,7 +47,7 @@ public class Bomber extends MovingObj  {
 
     public void setAlive(boolean alive) {
         this.alive = alive;
-    } // đã thêm
+    }
 
     private void setFrameRight() {
         Image right0 = Sprite.player_right.getFxImage();
