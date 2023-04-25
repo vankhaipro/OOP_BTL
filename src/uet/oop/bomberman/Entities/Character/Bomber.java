@@ -1,20 +1,13 @@
 package uet.oop.bomberman.Entities.Character;
 
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-import uet.oop.bomberman.Board;
-import uet.oop.bomberman.BombermanGame;
 import uet.oop.bomberman.Entities.Bomb.Bomb;
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Graphics.Sprite;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class Bomber extends MovingObj  {
 
