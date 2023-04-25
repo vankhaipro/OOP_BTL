@@ -19,12 +19,12 @@ public class DirectionExplosion extends Entity {
         this.direction = direction;
         this.x = x;
         this.y = y;
-        explosion = new Explosion[radius()];
+        explosion = new Explosion[radiusInOneDirection()];
         createExplosions();
     }
 
     // tính bán kính bom nổ theo một hướng
-    private int radius() {
+    private int radiusInOneDirection() {
         int radius1 = 0;
         int x1 = (int) x;
         int y1 = (int) y;
