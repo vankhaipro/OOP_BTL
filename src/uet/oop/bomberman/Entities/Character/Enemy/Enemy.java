@@ -1,8 +1,8 @@
 package uet.oop.bomberman.Entities.Character.Enemy;
-import uet.oop.bomberman.BombermanGame;
-import uet.oop.bomberman.Entities.Character.AI.AI;
+
 import javafx.scene.image.Image;
 import uet.oop.bomberman.Board;
+import uet.oop.bomberman.Entities.Character.AI.AI;
 import uet.oop.bomberman.Entities.Character.MovingObj;
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Graphics.Sprite;
@@ -242,8 +242,8 @@ public abstract class Enemy extends MovingObj {
             time++;
         } else if (time < 40) {
             this.setImg(imgFrameDie[3]);
-            Board.score += 100;
-            BombermanGame.board.removeEnemyAt(this.x, this.y);
+           // Board.score += 100;
+           // BombermanGame.board.removeEnemyAt(this.x, this.y); // cần code board
         }
     }
 
