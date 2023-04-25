@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
-import uet.oop.bomberman.Entities.Bomber;
+import uet.oop.bomberman.Entities.Character.Bomber;
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Entities.Grass;
 import uet.oop.bomberman.Entities.Wall;
@@ -17,10 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BombermanGame extends Application {
-    
+
     public static final int WIDTH = 20;
     public static final int HEIGHT = 15;
-    
+
     private GraphicsContext gc;
     private Canvas canvas;
     private List<Entity> entities = new ArrayList<>();
@@ -59,8 +59,8 @@ public class BombermanGame extends Application {
 
         createMap();
 
-        Entity bomberman = new Bomber(1, 1, Sprite.player_right.getFxImage());
-        entities.add(bomberman);
+        //Entity bomberman = new Bomber(20, 20, Sprite.player_right.getFxImage());
+        //entities.add(bomberman);
     }
 
     public void createMap() {
