@@ -32,7 +32,7 @@ public class Explosion extends Entity {
         }
     }
 
-    //khôi lồn
+    //hallooo
     public void update(int direction, int time) {
         if (!Board.flamePass) {
             Board.getPlayer().collideToDie(this);
