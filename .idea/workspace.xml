@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3ef1cc-7c89-4e4e-9fba-aa83d8dc0d92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Input/KeyBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Level/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Level/Level.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
