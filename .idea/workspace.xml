@@ -5,17 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3ef1cc-7c89-4e4e-9fba-aa83d8dc0d92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/BombItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/BombPass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/Detonator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/FlameItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/FlamePass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/Portal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/SpeedItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/WallPass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/background/Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/background/over.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/button/continue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/button/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Level2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Level3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Leveltest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/save.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/AA126_11.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/BOM_11_M.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/BOM_SET.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/BOSS_X_11K.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/Back.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/CRYST_UP.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/Item.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sound/endgame3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Sound/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/levels/Level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/levels/Level1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/levels/Level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/levels/Level1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/WallPass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/WallPass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,16 +76,31 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/lapto/Downloads/openjfx-20_windows-x64_bin-sdk/javafx-sdk-20/lib",
     "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
+    "project.structure.proportion": "0.15820312",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="BombermanGame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
-      <module name="OTP_BTL" />
-      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\Users\lapto\Downloads\openjfx-20_windows-x64_bin-sdk\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml " />
+      <module name="OOP_BTL" />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Downloads/javafx-sdk-20/lib --add-modules javafx.controls,javafx.fxml " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="OOP_BTL" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="OOP_BTL" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
