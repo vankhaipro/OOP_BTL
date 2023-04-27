@@ -27,10 +27,10 @@ public class Detonator extends Item {
     public void update() {
         if(Activated) {
             remove = true;
-            //Board.getPlayer().setHealth(Board.getPlayer().getHealth() + 1);
+            Board.getPlayer().setHealth(Board.getPlayer().getHealth() + 1);
             Board.getPlayer().updateStatus();
-            //BombermanGame.board.removeEntityAt(this.x, this.y);
-            //System.out.println(Board.getPlayer().getHealth());
+            BombermanGame.board.removeEntityAt(this.x, this.y);
+            System.out.println(Board.getPlayer().getHealth());
         }
     }
     @Override
