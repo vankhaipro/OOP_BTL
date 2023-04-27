@@ -2,7 +2,6 @@ package uet.oop.bomberman.Entities.Bomb;
 
 import javafx.scene.canvas.GraphicsContext;
 import uet.oop.bomberman.Board;
-import uet.oop.bomberman.BombermanGame;
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Graphics.Sprite;
 
@@ -33,7 +32,7 @@ public class Explosion extends Entity {
         }
     }
 
-
+    //khôi lồn
     public void update(int direction, int time) {
         if (!Board.flamePass) {
             Board.getPlayer().collideToDie(this);
