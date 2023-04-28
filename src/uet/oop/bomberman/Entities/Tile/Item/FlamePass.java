@@ -3,6 +3,7 @@ package uet.oop.bomberman.Entities.Tile.Item;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import uet.oop.bomberman.Board;
+import uet.oop.bomberman.BombermanGame;
 
 public class FlamePass extends Item {
     private boolean Activated = false;
@@ -27,7 +28,7 @@ public class FlamePass extends Item {
         if(Activated) {
             remove = true;
             Board.flamePass = true;
-            //BombermanGame.board.removeEntityAt(this.x, this.y);
+            BombermanGame.board.removeEntityAt(this.x, this.y);
         }
     }
     @Override

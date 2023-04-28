@@ -2,7 +2,8 @@ package uet.oop.bomberman.Entities.Tile.Item;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-import uet.oop.bomberman.Entities.Tile.Item.Item;
+import uet.oop.bomberman.Board;
+import uet.oop.bomberman.BombermanGame;
 
 public class WallPass extends Item {
     private boolean Activated = false;
@@ -22,8 +23,8 @@ public class WallPass extends Item {
     public void update() {
         if(Activated) {
             remove = true;
-            //Board.wallPass = true;
-            //BombermanGame.board.removeEntityAt(this.x, this.y);
+            Board.wallPass = true;
+            BombermanGame.board.removeEntityAt(this.x, this.y);
         }
     }
     @Override

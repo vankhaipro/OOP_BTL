@@ -2,7 +2,7 @@ package uet.oop.bomberman.Entities.Tile.Item;
 
 import javafx.scene.image.Image;
 import uet.oop.bomberman.Board;
-import uet.oop.bomberman.Entities.Tile.Item.Item;
+import uet.oop.bomberman.BombermanGame;
 
 public class Portal extends Item {
     private boolean Activated = false;
@@ -25,9 +25,9 @@ public class Portal extends Item {
      */
     @Override
     public void update() {
-        //if(BombermanGame.board.getEnemies().size() == 0) {
+        if(BombermanGame.board.getEnemies().size() == 0) {
             Activated = true;
-        //}
+        }
         if(Activated) {
             Board.map[(int) this.y][(int) this.x] = ' ';
         } else {

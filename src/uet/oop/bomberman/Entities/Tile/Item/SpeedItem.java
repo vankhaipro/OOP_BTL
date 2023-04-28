@@ -3,7 +3,7 @@ package uet.oop.bomberman.Entities.Tile.Item;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import uet.oop.bomberman.Board;
-import uet.oop.bomberman.Entities.Tile.Item.Item;
+import uet.oop.bomberman.BombermanGame;
 
 public class SpeedItem extends Item {
     private boolean Activated = false;
@@ -29,7 +29,7 @@ public class SpeedItem extends Item {
         if (Activated) {
             remove = true;
             Board.getPlayer().setSpeed(Board.getPlayer().getSpeed() + 0.001);
-            //BombermanGame.board.removeEntityAt(this.x, this.y);
+            BombermanGame.board.removeEntityAt(this.x, this.y);
             System.out.println(Board.getPlayer().getSpeed());
         }
     }
