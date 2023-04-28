@@ -1,8 +1,7 @@
-package uet.oop.bomberman.Entities.Tile;
+package uet.oop.bomberman.Entities.Tile.Item;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
-import uet.oop.bomberman.BombermanGame;
 
 public class BombPass extends Item {
     public BombPass(int xCanvas, int yCanvas, Image img) {

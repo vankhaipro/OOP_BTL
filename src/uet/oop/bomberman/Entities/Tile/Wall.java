@@ -1,6 +1,7 @@
-package uet.oop.bomberman.Entities;
+package uet.oop.bomberman.Entities.Tile;
 
 import javafx.scene.image.Image;
+import uet.oop.bomberman.Entities.Entity;
 
 public class Wall extends Entity {
 // tường

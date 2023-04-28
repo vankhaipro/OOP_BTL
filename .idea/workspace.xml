@@ -5,10 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba49c6e1-8bb6-491c-a6a6-bef98d79e79d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/levels/Level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/levels/Level1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/BombermanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/BombermanGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/Detonator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/Detonator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/Bomber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/Bomber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/BombermanGame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/BombermanGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Bomb/Bomb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Bomb/DirectionExplosion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Bomb/Explosion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/AI/AI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Bomber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Balloon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Doll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Kondoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Oneal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/MovingObj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Grass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/BombItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/BombPass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/Detonator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/FlameItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/FlamePass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/Portal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/SpeedItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/WallPass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Wall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Graphics/Sprite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Graphics/SpriteSheet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Input/KeyBoard$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Input/KeyBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Level/Level.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Sound/Sound$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Sound/Sound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/entities/Entity.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,27 +74,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lapto/.m2/repository/org/openjfx/javafx-fxml/19&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Boomber-master",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.BombermanGame">
     <configuration name="BombermanGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-20" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="uet.oop.bomberman.BombermanGame" />
-      <module name="OTP_BTL" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\lapto\Downloads\openjfx-20_windows-x64_bin-sdk\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <module name="bomberman" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\ADMIN\Downloads\openjfx-20_windows-x64_bin-sdk\javafx-sdk-20\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="uet.oop.bomberman.*" />

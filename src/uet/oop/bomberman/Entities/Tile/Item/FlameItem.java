@@ -1,18 +1,17 @@
-package uet.oop.bomberman.Entities.Tile;
+package uet.oop.bomberman.Entities.Tile.Item;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import uet.oop.bomberman.Board;
-import uet.oop.bomberman.BombermanGame;
 
-public class SpeedItem extends Item {
+public class FlameItem extends Item {
     private boolean Activated = false;
 
-    public SpeedItem(int xCanvas, int yCanvas, Image img) {
+    public FlameItem(int xCanvas, int yCanvas, Image img) {
         super(xCanvas, yCanvas, img);
     }
 
-    public SpeedItem(int xCanvas, int yCanvas, Image img, int TimeActivated, boolean Activated) {
+    public FlameItem(int xCanvas, int yCanvas, Image img, int TimeActivated, boolean Activated) {
         super(xCanvas, yCanvas, img, TimeActivated, Activated);
     }
 
@@ -26,17 +25,15 @@ public class SpeedItem extends Item {
 
     @Override
     public void update() {
-        if (Activated) {
+        if(Activated) {
             remove = true;
-            Board.getPlayer().setSpeed(Board.getPlayer().getSpeed() + 0.001);
+            Board.bombRadius++;
             //BombermanGame.board.removeEntityAt(this.x, this.y);
-            System.out.println(Board.getPlayer().getSpeed());
         }
     }
-
     @Override
     public void render(GraphicsContext gc) {
-        if (!remove) {
+        if(!remove) {
             super.render(gc);
         }
     }

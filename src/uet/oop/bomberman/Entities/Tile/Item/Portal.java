@@ -1,8 +1,8 @@
-package uet.oop.bomberman.Entities.Tile;
+package uet.oop.bomberman.Entities.Tile.Item;
 
 import javafx.scene.image.Image;
 import uet.oop.bomberman.Board;
-import uet.oop.bomberman.BombermanGame;
+import uet.oop.bomberman.Entities.Tile.Item.Item;
 
 public class Portal extends Item {
     private boolean Activated = false;
