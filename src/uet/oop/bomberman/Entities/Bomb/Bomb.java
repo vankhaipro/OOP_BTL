@@ -6,7 +6,7 @@ import uet.oop.bomberman.Board;
 
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Graphics.Sprite;
-//import uet.oop.bomberman.Sound.Sound; // cần code
+import uet.oop.bomberman.Sound.Sound;
 
 import java.util.HashSet;
 import java.util.stream.IntStream;
@@ -28,12 +28,28 @@ public class Bomb extends Entity {
         super(x, y, img);
         this.remove = remove;
     }
-    // Cần code
+
     @Override
     public void update() {
-
+        if (!remove) {
+            if (timeToExplode > 0)
+                timeToExplode--;
+            else {
+                if (!exploded)
+                    explosion();
+                if (timeAfter > 0) {
+                    timeAfter--;
+                    updateExplosions();
+                } else {
+                    remove = true;
+                    Sound.play("BOM_11_M");
+                }
+            }
+        }
+        if (remove && timeAfter == 0) {
+            Board.getPlayer().removeBombAt(this.x, this.y);
+        }
     }
-    // Cần code
 
     protected void explosion() {
 

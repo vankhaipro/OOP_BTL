@@ -1,20 +1,15 @@
 package uet.oop.bomberman.Entities.Character.Enemy;
-
+import uet.oop.bomberman.BombermanGame;
+import uet.oop.bomberman.Entities.Character.AI.AI;
 import javafx.scene.image.Image;
 import uet.oop.bomberman.Board;
-import uet.oop.bomberman.Entities.Character.AI.AI;
 import uet.oop.bomberman.Entities.Character.MovingObj;
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Graphics.Sprite;
 
 import java.util.HashSet;
 
-// 4 kinds of enemies
-// Balloom < Oneal < Doll < Kondoria
-// Balloom = 1
-// Oneal = 2
-// Doll = 3
-// Kondoria = 4
+
 public abstract class Enemy extends MovingObj {
     protected Image[] imgFrameDie;
     protected int currentDirection = 1;
@@ -27,7 +22,6 @@ public abstract class Enemy extends MovingObj {
     }
 
     public abstract int chooseDirection();
-    //kiểm tra va chạm khi enemy di chuyển qua phải
     public void checkToMapMoveRight() {
 
         double distance = 1;
@@ -59,7 +53,7 @@ public abstract class Enemy extends MovingObj {
             }
         }
     }
-    //kiểm tra va chạm khi enemy di chuyển qua trái
+
     public void checkToMapMoveLeft() {
         int xPos = (int) (x - speed);
 
@@ -88,7 +82,7 @@ public abstract class Enemy extends MovingObj {
             }
         }
     }
-    //kiểm tra va chạm khi enemy di chuyển đi lên
+
     public void checkToMapMoveUp() {
 
         double distance = 1;
@@ -117,7 +111,7 @@ public abstract class Enemy extends MovingObj {
             }
         }
     }
-    //kiểm tra va chạm khi enemy di chuyển đi zuống
+
     public void checkToMapMoveDown() {
         double distance = 1;
         int xPos = (int) x;
@@ -144,7 +138,6 @@ public abstract class Enemy extends MovingObj {
             }
         }
     }
-    //thiết lập hình ảnh die của enemy
     protected void setFrameDie() {
         Image die0 = Sprite.balloom_dead.getFxImage();
         Image die1 = Sprite.mob_dead1.getFxImage();
@@ -211,8 +204,8 @@ public abstract class Enemy extends MovingObj {
             }
         }
     }
-    //kiểm tra va chạm enemy với bom
-    public void bomExploded(Entity obj) {
+
+    public void collideWithExplosion(Entity obj) {
         if (alive) {
             HashSet<String> maskPlayer1 = getMask(this);
             HashSet<String> maskPlayer2 = getMask(obj);
@@ -242,8 +235,8 @@ public abstract class Enemy extends MovingObj {
             time++;
         } else if (time < 40) {
             this.setImg(imgFrameDie[3]);
-           // Board.score += 100;
-           // BombermanGame.board.removeEnemyAt(this.x, this.y); // cần code board
+            Board.score += 100;
+            BombermanGame.board.removeEnemyAt(this.x, this.y);
         }
     }
 

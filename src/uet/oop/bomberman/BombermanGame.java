@@ -26,8 +26,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 
 
-import static jdk.jfr.internal.consumer.EventLog.update;
-
 public class BombermanGame extends Application {
 
     public static GraphicsContext gc;
@@ -214,7 +212,7 @@ public class BombermanGame extends Application {
         gameRoot.getChildren().add(canvas);
         gameRoot.getChildren().add(canvasForPlayer);
 
-        gameRoot.getChildren().addAll(textList);
+        gameRoot.getChildren().addAll(TextList);
 
         gameScene = new Scene(gameRoot, Sprite.SCALED_SIZE * Board.WIDTH, Sprite.SCALED_SIZE * (Board.HEIGHT + 2), Color.BLACK);
 

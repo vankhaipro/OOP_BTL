@@ -7,8 +7,8 @@ import uet.oop.bomberman.BombermanGame;
 import uet.oop.bomberman.Entities.Bomb.Bomb;
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Entities.Tile.Brick;
-import uet.oop.bomberman.Entities.Tile.Item.Item.Item;
-import uet.oop.bomberman.Entities.Tile.Item.Item.Portal;
+import uet.oop.bomberman.Entities.Tile.Item.Item;
+import uet.oop.bomberman.Entities.Tile.Item.Portal;
 import uet.oop.bomberman.Graphics.Sprite;
 import uet.oop.bomberman.Sound.Sound;
 import java.io.BufferedWriter;
@@ -51,7 +51,7 @@ public class Bomber extends MovingObj {
 
     public void setAlive(boolean alive) {
         this.alive = alive;
-    } // đã thêm
+    }
 
     private void setFrameRight() {
         Image right0 = Sprite.player_right.getFxImage();
@@ -105,7 +105,7 @@ public class Bomber extends MovingObj {
 
     public List<Bomb> getBombs() {
         return bombs;
-    } // thêm
+    }
 
     public void addBomb(Bomb bomb) {
         boolean check = true;
@@ -117,7 +117,7 @@ public class Bomber extends MovingObj {
         }
         if (check) {
             bombs.add(bomb);
-            //Sound.play("BOM_SET");
+            Sound.play("BOM_SET");
         }
     }
 
@@ -475,7 +475,7 @@ public class Bomber extends MovingObj {
                     }
                 }
             } else {
-                if (!obj.isActivated()) {
+                if (!obj.getActivated()) {
                     if (maskPlayer1.size() > 0) {
                         obj.setActivated(true);
                         Sound.play("Item");

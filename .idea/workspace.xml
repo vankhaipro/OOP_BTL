@@ -5,48 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba49c6e1-8bb6-491c-a6a6-bef98d79e79d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Tile/Brick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/BombermanGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/BombermanGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Bomb/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Bomb/Bomb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Bomb/DirectionExplosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Bomb/DirectionExplosion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Bomb/Explosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Bomb/Explosion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/AI/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/AI/AI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/Bomber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/Bomber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/BombermanGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/BombermanGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Bomb/Bomb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Bomb/DirectionExplosion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Bomb/Explosion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/AI/AI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Bomber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Balloon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Doll.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Enemy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Kondoria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/Enemy/Oneal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Character/MovingObj.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Grass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/BombItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/BombPass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/Detonator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/FlameItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/FlamePass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/Portal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/SpeedItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Tile/WallPass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Entities/Wall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Graphics/Sprite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Graphics/SpriteSheet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Input/KeyBoard$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Input/KeyBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Level/Level.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Sound/Sound$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/Sound/Sound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uet/oop/bomberman/entities/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/Enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uet/oop/bomberman/Entities/Character/Enemy/Enemy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

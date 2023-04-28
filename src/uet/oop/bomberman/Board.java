@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Board {
     public static final int WIDTH = 31;
@@ -41,7 +42,7 @@ public class Board {
      */
     public Board() {
         player = new Bomber(1, 1, Sprite.player_right.getFxImage(), speedOfPlayer);
-        //loadLevel(); // code nốt board
+        loadLevel();
         gameLevel = new Level(this);
     }
 
@@ -68,4 +69,131 @@ public class Board {
         wallPass = false;
         this.level = level;
     }
+
+    /**
+     * Đưa quái vật vào vị trí trong bản đồ
+     */
+    public Entity getEntity(double x, double y) {
+        for (Entity temp : entities) {
+            if (temp.getX() == x && temp.getY() == y) {
+                return temp;
+            }
+        }
+        return null;
+    }
+
+    public void removeEntityAt(double x, double y) {
+        for (int i = 0; i < entities.size(); i++) {
+            Entity temp = entities.get(i);
+            if (temp.getX() == x && temp.getY() == y) {
+                entities.remove(i);
+                break;
+            }
+        }
+    }
+
+    public void addEntity(Entity object) {
+        entities.add(object);
+    }
+
+    public void addStillObject(Entity object) {
+        stillObjects.add(object);
+    }
+
+    public List<Entity> getEntities() {
+        return entities;
+    }
+
+    public List<Entity> getStillObjects() {
+        return stillObjects;
+    }
+
+    public int getLeft() {
+        return getPlayer().getHealth();
+    }
+
+    public List<Enemy> getEnemies() {
+        return enemies;
+    }
+
+    public void removeEnemyAt(double x, double y) {
+        for (int i = 0; i < enemies.size(); i++) {
+            Enemy temp = enemies.get(i);
+            if (temp.getX() == x && temp.getY() == y) {
+                enemies.remove(temp);
+            }
+        }
+    }
+
+    public void addEnemy(Enemy newEnemy) {
+        enemies.add(newEnemy);
+    }
+
+    public int countDown() {
+        countDownTime--;
+        return countDownTime;
+    }
+
+
+    public int index(double x, double y) {
+        for (int i = 0; i < entities.size(); i++) {
+            Entity temp = entities.get(i);
+            if (temp.getX() == x && temp.getY() == y) {
+                return i;
+            }
+        }
+        return 0;
+    }
+
+    public int getLevel() {
+        return this.level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public Level getGameLevel() {
+        return this.gameLevel;
+    }
+
+    public void render() {
+        BombermanGame.gc.clearRect(0, 0, BombermanGame.canvas.getWidth(), BombermanGame.canvas.getHeight());
+        BombermanGame.gcForPlayer.clearRect(0, 0, BombermanGame.canvas.getWidth(), BombermanGame.canvas.getHeight());
+        BombermanGame.board.getStillObjects().forEach(g -> g.render(BombermanGame.gc));
+        BombermanGame.board.getEntities().forEach(g -> g.render(BombermanGame.gcForPlayer));
+        BombermanGame.board.getEnemies().forEach(g -> g.render(BombermanGame.gcForPlayer));
+
+    }
+
+    public void update() {
+        for (Entity entity : entities) {
+            entity.update();
+        }
+        for (Enemy enemy : enemies) {
+            enemy.update();
+        }
+    }
+
+    /**
+     * load thông tin level game
+     */
+    public void loadLevel() {
+        try {
+            Scanner scanner = new Scanner(file);
+            level = scanner.nextInt();
+            int left = scanner.nextInt();
+            scorePrevious = scanner.nextInt();
+            if (left == 0) {
+                left = 3;
+                level = 1;
+                Board.scorePrevious = 0;
+            }
+            player.setHealth(left);
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

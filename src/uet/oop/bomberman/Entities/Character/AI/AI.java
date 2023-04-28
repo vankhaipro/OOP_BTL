@@ -75,11 +75,11 @@ public class AI {
         createInfo(enemy);
 
         if (distance > 10) {
-           // enemy.setSpeed(Board.speedOfEnemy); cần code board
+            enemy.setSpeed(Board.speedOfEnemy);
         }
 
         if (distance < 3) {
-           // enemy.setSpeed(Board.speedOfEnemy * 2); cần code board
+            enemy.setSpeed(Board.speedOfEnemy * 2);
         }
         if (distance < 6) {
             if (tempX == (int) tempX && tempY == (int) tempY) {

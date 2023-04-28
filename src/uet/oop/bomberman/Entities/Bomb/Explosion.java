@@ -2,6 +2,7 @@ package uet.oop.bomberman.Entities.Bomb;
 
 import javafx.scene.canvas.GraphicsContext;
 import uet.oop.bomberman.Board;
+import uet.oop.bomberman.BombermanGame;
 import uet.oop.bomberman.Entities.Entity;
 import uet.oop.bomberman.Graphics.Sprite;
 
@@ -39,12 +40,12 @@ public class Explosion extends Entity {
         }
         int sizeBomb = Board.getPlayer().getBombs().size();
         for (int i = 0; i < sizeBomb; i++) {
-            //Board.getPlayer().getBombs().get(i).collideWithBombOther(this); cần code
+            Board.getPlayer().getBombs().get(i).collideWithBombOther(this);
         }
-        //int sizeEnemy = BombermanGame.board.getEnemies().size();// cần code
-       // for (int i = 0; i < sizeEnemy; i++) {
-            // BombermanGame.board.getEnemies().get(i).collideWithExplosion(this); cần code
-       // }
+        int sizeEnemy = BombermanGame.board.getEnemies().size();// cần code
+        for (int i = 0; i < sizeEnemy; i++) {
+             BombermanGame.board.getEnemies().get(i).collideWithExplosion(this);
+        }
         time %= 30;
         if (time > 10 && time <= 20) {
             switch (direction) {
