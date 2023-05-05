@@ -5,7 +5,7 @@ import uet.oop.bomberman.Entities.Entity;
 
 public abstract class MovingObj extends Entity {
 
-    protected final int animate = 5;
+    protected final int animate = 4;
     protected Image[] imgFrameRight;
     protected Image[] imgFrameLeft;
     protected double speed;

@@ -24,7 +24,7 @@ public class Board {
     public static boolean flamePass = false;
     public static boolean bombPass = false;
     public static boolean wallPass = false;
-    public static int countDownTime = 180 * 60;
+    public static int countDownTime = 300 * 60;
     public static int scorePrevious;
     public static double speedOfEnemy = 0.025;
     private static double speedOfPlayer = 0.0035;
