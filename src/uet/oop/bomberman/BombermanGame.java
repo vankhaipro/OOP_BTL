@@ -58,8 +58,8 @@ public class BombermanGame extends Application {
         keyBoard = new KeyBoard();
         Board.score = 0;
         Board.getPlayer().setHealth(3);
-        board.setLevel(1);
-        board.getGameLevel().createMapLevel(1);
+        board.setLevel(0);
+        board.getGameLevel().createMapLevel(0);
         System.out.println("DANG TAO GAME");
 
     }
@@ -262,7 +262,7 @@ public class BombermanGame extends Application {
                             }
                             if(Board.getPlayer().isWin()) {
                                 Board.scorePrevious = 0;
-                                BombermanGame.board.setLevel(2);
+                                BombermanGame.board.setLevel(0);
                                 Board.getPlayer().setHealth(3);
                                 Board.getPlayer().updateStatus();
                                 finalStage.setScene(gameFinalScene(Board.getPlayer().isWin()));
