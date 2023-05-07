@@ -10,5 +10,8 @@
         <module name="OOP_BTL" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="OTP_BTL" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

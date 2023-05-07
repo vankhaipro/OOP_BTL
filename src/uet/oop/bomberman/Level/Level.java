@@ -119,7 +119,6 @@ public class Level {
                         boardGame.addEntity(objectd);
                         objectd.setEntityBelow(objectBelow8);
                         break;
-//                }
                 }
             }
             Board.getPlayer().setX(1);
