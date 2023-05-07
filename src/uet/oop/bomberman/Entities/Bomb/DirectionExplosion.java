@@ -45,7 +45,6 @@ public class DirectionExplosion extends Entity {
                 }
                 break;
             }
-// cần code board
         }
 
         return radius1;

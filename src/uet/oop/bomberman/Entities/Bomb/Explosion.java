@@ -36,15 +36,15 @@ public class Explosion extends Entity {
     //hallooo
     public void update(int direction, int time) {
         if (!Board.flamePass) {
-            Board.getPlayer().collideToDie(this);
+            Board.getPlayer().collideToDie(this); // va chạm với player
         }
         int sizeBomb = Board.getPlayer().getBombs().size();
         for (int i = 0; i < sizeBomb; i++) {
-            Board.getPlayer().getBombs().get(i).collideWithBombOther(this);
+            Board.getPlayer().getBombs().get(i).collideWithBombOther(this); // va chạm với bomb khác
         }
-        int sizeEnemy = BombermanGame.board.getEnemies().size();// cần code
+        int sizeEnemy = BombermanGame.board.getEnemies().size();
         for (int i = 0; i < sizeEnemy; i++) {
-             BombermanGame.board.getEnemies().get(i).collideWithExplosion(this);
+             BombermanGame.board.getEnemies().get(i).collideWithExplosion(this); // va chạm với quái
         }
         time %= 30;
         if (time > 10 && time <= 20) {

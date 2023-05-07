@@ -64,7 +64,7 @@ public class Bomb extends Entity {
             explosion.update(timeAfter);
         }
     }
-
+// va chạm với bomb khác
     public void collideWithBombOther(Entity obj) {
         HashSet<String> maskBomb = getMask(this);
         HashSet<String> maskBombOther = getMask(obj);
